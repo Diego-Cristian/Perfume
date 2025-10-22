@@ -1,0 +1,365 @@
+header nav .navbar-brand {
+  font-size: 36px;
+  margin-right: 15%;
+}
+
+header nav .navbar-collapse ul {
+  width: 100%;
+}
+
+header nav .navbar-collapse ul li {
+  margin-right: 10%;
+}
+
+header nav .navbar-collapse ul li a {
+  width: 150px;
+  font-family: sans-serif;
+}
+
+header nav .navbar-collapse ul li a i {
+  font-size: 28px;
+  color: #F2275D;
+}
+
+header nav .navbar-collapse ul li a i:hover {
+  color: #753244;
+}
+
+main {
+  padding: 2% 2% 2% 2%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+main #about-us {
+  background-image: url(../images/girl.jpg);
+  width: auto;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-left: 2%;
+}
+
+main #about-us div {
+  padding: 10% 0% 0% 0%;
+  margin-left: 0%;
+}
+
+main #about-us div h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  main #about-us div h2 {
+    width: 100%;
+  }
+}
+
+main #about-us div h3 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: 400;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  main #about-us div h3 {
+    width: 100%;
+  }
+}
+
+main #about-us div p {
+  text-align: center;
+  width: 50%;
+  font-weight: 200;
+  font: 16px sans-serif;
+}
+
+@media (max-width: 991px) {
+  main #about-us div p {
+    width: 100%;
+  }
+}
+
+main #cards {
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+main #cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(148, 148, 148, 0.041);
+  cursor: pointer;
+}
+
+main #cards .card:hover {
+  -webkit-box-shadow: 0px 1px 3px 0px black;
+          box-shadow: 0px 1px 3px 0px black;
+}
+
+main #cards .card img {
+  width: auto;
+  height: 200px;
+}
+
+main #cards .card h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+main #cards .card h4 {
+  font-size: 18px;
+  color: #81052e;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+main .modals .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .modals .modal-body h3 {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+main .modals .modal-body p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #2e2e2e;
+  text-align: left;
+}
+
+main .modals .modal-body h4 {
+  font-size: 18px;
+  color: #81052e;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 5%;
+}
+
+main .modals .modal-body table {
+  width: 100%;
+}
+
+main .modals .modal-body table tr {
+  width: 100%;
+}
+
+main .modals .modal-body table tr td {
+  font-family: sans-serif;
+}
+
+main .modals .modal-body table tr .title {
+  font-family: myriad;
+  margin-right: 5%;
+}
+
+main #login .modal-body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #login .modal-body form h2 {
+  color: #F2275D;
+}
+
+main #login .modal-body form input {
+  border: 0px;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid;
+  border-color: #10498D;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  color: #81052e;
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+main #login .modal-body form input:focus {
+  width: 350px;
+  border-color: #F2275D;
+  place-content: none;
+}
+
+main #login .modal-body form .submit {
+  border: 0px;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #F2275D;
+  padding: 14px 40px;
+  width: 250px;
+  outline: none;
+  color: #81052e;
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+main #login .modal-body form .submit:hover {
+  background: #F2275D;
+}
+
+main #connection {
+  background-color: rgba(148, 148, 148, 0.041);
+  margin-top: 2%;
+  padding: 2% 0% 2% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #connection h3 {
+  color: #F2275D;
+  padding-bottom: 2%;
+}
+
+main #connection div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+
+main #connection div i {
+  font-size: 36px;
+}
+
+main #connection div .fa-facebook:hover {
+  color: #1f1f7e;
+}
+
+main #connection div .fa-instagram:hover {
+  color: #F2275D;
+}
+
+main #connection div .fa-twitter:hover {
+  color: #3d9ddd;
+}
+
+main #connection div .fa-pinterest:hover {
+  color: #c41212;
+}
+
+footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer span {
+  color: #F2275D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: myriad;
+  background-image: url(../images/background.jpg);
+  width: 100%;
+  height: 3vh;
+  background-repeat: no-repeat;
+}
+
+.my-container {
+  padding: 0 10% 0 10%;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,200 @@
+main{
+    padding: 2% 2% 2% 2%;
+    margin-bottom: 1%;
+    margin-top:1%;
+    #about-us{
+        background-image: url(../images/girl.jpg);
+        width:auto;
+        background-repeat: no-repeat;
+        height:400px;
+        padding-left:2%;
+        div{
+            padding: 10% 0% 0% 0%;
+            margin-left:0%;
+            h2{
+               
+                font-size:30px;
+                font-family:sans-serif;
+                text-align: center;
+                width:50%;
+                @media (max-width: $maxWidth){
+                    width:100%;
+                }  
+            }
+            h3{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                font-weight:400;
+                width:50%;
+                @media (max-width: $maxWidth){
+                    width:100%;
+                } 
+            }
+            p{
+                text-align: center;
+                width:50%;
+                font-weight: 200;
+                font:16px sans-serif;
+                @media (max-width: $maxWidth){
+                    width:100%;
+                } 
+            }
+        
+        }
+    }
+    #cards{
+        margin-top:5%;
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px ,1fr));
+        grid-column-gap: 10px;
+        grid-row-gap:10px;
+        .card{
+            @include cards;
+            
+        }
+                
+        }
+
+    
+    .modals{
+        .modal-body{
+            @include flex;
+            flex-direction: column;
+            h3{
+                font-size:22px;
+                font-family: sans-serif;
+                font-weight: bold;
+                color:rgb(46, 46, 46);
+                text-align: center;
+            }
+            p{
+                font-size:18px;
+                font-family: sans-serif;
+                color:rgb(46, 46, 46);
+                text-align: left;
+            }
+            h4{
+                font-size:18px;
+                color:$mainColor2;
+                font-family: sans-serif;
+                text-align: center;
+                margin-top:5%;
+            }
+            table{
+                width: 100%;
+                tr{
+                    width:100%;
+                    td{
+                        font-family: sans-serif;
+                    }
+                    .title{
+                        font-family: myriad;
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+    }
+    #login{
+        .modal-body{
+            
+            form{
+                @include flex;
+                justify-content: center;
+                flex-direction: column;
+                
+                h2{
+                    color:$mainColor;   
+                }
+                input{
+                    border:0px;
+                    background:none;
+                    display: block;
+                    margin: 20px auto;
+                    text-align: center;
+                    border: 2px solid;
+                    border-color: #10498D;
+                    padding: 14px 10px;
+                    width: 300px;
+                    outline: none;
+                    color: $mainColor2;
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    &:focus{
+                        width:350px;
+                        border-color:$mainColor;
+                        place-content: none;
+                    }
+                }
+                .submit{
+                    border:0px;
+                    background:none;
+                    display: block;
+                    margin: 20px auto;
+                    text-align: center;
+                    border: 2px solid $mainColor;
+                    padding: 14px 40px;
+                    width:250px;
+                    outline: none;
+                    color: $mainColor2;
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    cursor: pointer;
+                    &:hover{
+                        background:$mainColor;
+                    }
+                }
+            }
+        }
+    }
+    #connection{
+        background-color: rgba(148, 148, 148, 0.041);
+        margin-top:2%;
+        
+        padding:2% 0% 2% 0%;
+        @include flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h3{
+            color:$mainColor;
+            padding-bottom:2%;
+        }
+        div{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width:80%;
+            i{
+                font-size:36px;
+            }
+            .fa-facebook{
+                &:hover{
+                    color: rgb(31, 31, 126);
+                }
+            }
+            .fa-instagram{
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+            .fa-twitter{
+                &:hover{
+                    color: rgb(61, 157, 221);
+                }
+            }
+            .fa-pinterest{
+                &:hover{
+                    color: rgb(196, 18, 18);
+                }
+            }
+    }
+    }
+}
+// working on footer.
+footer{
+    height: 100px;
+    @include flex;
+    span{
+        color: $mainColor;
+    }
+}

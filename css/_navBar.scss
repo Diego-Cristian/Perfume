@@ -1,0 +1,30 @@
+header{
+    nav{
+        .navbar-brand{
+
+            font-size:36px;
+            margin-right:15%;
+            
+        }
+        .navbar-collapse{
+            ul{
+                width:100%;
+                li{
+                    margin-right:10%;
+                    a{
+                        width:150px;
+                        font-family:sans-serif;
+                        i{
+                            font-size:28px;
+                            color: #F2275D;
+                            &:hover{
+                                color:rgb(117, 50, 68);
+                            }
+                        }
+                    }
+                    
+                }
+        }
+    }
+}
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugins/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/libraries/normalize.css">
+    <title>DC Perfumes</title>
+</head>
+<body class="my-container">
+    <header class="my-container bg-light">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand active" href="#" style="color: #000000;">DC</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#about-us" >FRAGRANCE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#cards"></a>
+                        </li>
+                        <li class="nav-item login">
+                          <a class="nav-link" href="#login" data-toggle="modal" data-target="#login"><i class="fas fa-user-alt"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+            </nav>
+    </header>
+    <main class=" bg-light">
+        <section id ="about-us" >
+            <div>
+                <h2>FRAGRANCIAS</h2>
+                <h3>Sobre Nosotros</h3>
+                <p>Si estás buscando perfumes, estás en el lugar correcto.Te ofrecemos una amplia selección de perfumes importados, originales y fragancias para todos los gustos. Ya sea que busques un perfume de hombre, de mujer o unisex, encontrarás opciones que se adaptan a tu estilo y personalidad. Descubre la esencia perfecta para cada tipo de cuerpo. ¡¡perfumes que realzan tu singularidad y elegancia !!
+                </p>
+            </div>
+        </section>
+        <section id="cards" class=" bg-light">
+          <div class="card" data-toggle="modal" data-target="#myModal" id="card1" onclick="pop1()">
+            <img src="images/perfume1.png">
+            <h3>Perfume 1</h3>
+            <h4 id="price-1">$199.56</h4>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#myModal" id="card2" onclick="pop2()">
+            <img src="images/perfume2.png">
+            <h3>Perfume 2</h3>
+            <h4 id="price-2">$198.25</h4>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#myModal" id="card3" onclick="pop3()">
+            <img src="images/perfume3.png">
+            <h3>Perfume 3</h3>
+            <h4 id="price-3">$159.99</h4>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#myModal" id="card4" onclick="pop4()">
+            <img src="images/perfume4.png">
+            <h3>Perfume 4</h3>
+            <h4 id="price-4">$144.99</h4>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#myModal" id="card5" onclick="pop5()">
+              <img src="images/perfume5.png">
+              <h3>Perfume 5</h3>
+              <h4 id="price-5">$120.00</h4>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#myModal" id="card6" onclick="pop6()">
+              <img src="images/perfume6.png">
+              <h3>Perfume 6</h3>
+              <h4 id="price-6">$134.99</h4>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#myModal" id="card7" onclick="pop7()">
+              <img src="images/perfume7.png">
+              <h3>Perfume 7</h3>
+              <h4 id="price-7">$169.99</h4>
+            </div>
+            <div class="card" data-toggle="modal" data-target="#myModal" id="card8" onclick="pop8()">
+                <img src="images/perfume8.png">
+                <h3>Perfume 8</h3>
+                <h4 id="price-8">$199.99</h4>
+            </div>
+            <div class="card" data-toggle="modal" data-target="#myModal" id="card9" onclick="pop9()">
+                <img src="images/perfume9.png">
+                <h3>Perfume 9</h3>
+                <h4 id="price-9">$184.99</h4>
+            </div>
+            <div class="card" data-toggle="modal" data-target="#myModal" id="card9" onclick="pop9()">
+                <img src="images/perfume9.png">
+                <h3>Perfume 10</h3>
+                <h4 id="price-9">$184.99</h4>
+            </div>
+            <div class="card" data-toggle="modal" data-target="#myModal" id="card9" onclick="pop9()">
+                <img src="images/perfume9.png">
+                <h3>Perfume 11</h3>
+                <h4 id="price-9">$184.99</h4>
+            </div>
+            <div class="card" data-toggle="modal" data-target="#myModal" id="card9" onclick="pop9()">
+                <img src="images/perfume9.png">
+                <h3>Perfume 12</h3>
+                <h4 id="price-9">$184.99</h4>
+            </div>
+            <div class="card" data-toggle="modal" data-target="#myModal" id="card9" onclick="pop9()">
+                <img src="images/perfume9.png">
+                <h3>Perfume 13</h3>
+                <h4 id="price-9">$184.99</h4>
+            </div>
+        </section>
+        <section class="modals">
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" >PERFUME CARD</h4>
+                    <button type="button" class="close" data-dismiss="modal" onClick="window.location.reload()">&times;</button>
+                  </div>            
+                  <!-- Modal body -->
+                  <div class="modal-body" id="modal-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus fugit ea eaque veniam temporibus.
+                    </p>
+                    <table>
+                      <tr>
+                        <td class="title"> COLOR</td>
+                        <td> lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Gender</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Perfume Family</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Brand</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Your Perfume Character </td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Size</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Version Year</td>
+                        <td>lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Gradients</td>
+                        <td>lorem,lorem,lorem</td>
+                      </tr>
+                      <tr>
+                        <td class="title">Concentration</td>
+                        <td>Lorem, ipsum.</td>
+                      </tr>
+                    </table>
+                  </div>            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" value="Reload Page" onClick="window.location.reload()">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>          
+            <!--login or sign up modal-->
+            <!-- The Modal -->
+            <div class="modal fade" id="login">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" onClick="window.location.reload()">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body bg-light">
+                    <form class="box" action="Alogin.html" method="post">
+                      <h2>LOGIN</h2>
+                      <input type="text" name="" placeholder="User Name">
+                      <input type="password" name="" placeholder="password">
+                      <input type="submit" name="" value="Login" class="submit">       
+                 </form> 
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" value="Reload Page" onClick="window.location.reload()">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="connection" >
+          <h3> Mantenerte en conexión con nosotros ahora mismo </h3>
+          <div>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+        </section>
+    </main>
+    <footer class="bg-light">
+        Derechos de autor © 2025 Copyright - Desarrollos DC 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/plugins-libraries/j-query/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins-libraries/plugins/wow.min.js"></script>           
+    <script src="js/script.js"></script>
+</body>
+</html>
